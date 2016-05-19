@@ -45,12 +45,12 @@ var downloadTorrent = function(torrent) {
                     var stream = file.createReadStream();
                 }
             });
-            resolve('Downloading...');
         });
         engine.on('idle', () => {
             console.log('Done!');
             engine.destroy();
         })
+        resolve('Downloading...');
     })
 }
 
