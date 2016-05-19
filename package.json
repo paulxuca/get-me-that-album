@@ -1,6 +1,6 @@
 {
     "name": "get-me-that-album",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "description": "Get me that album!",
     "main": "index.js",
     "scripts": {

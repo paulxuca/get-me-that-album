@@ -40,7 +40,7 @@ var downloadTorrent = function(torrent) {
         engine.on('ready', () => {
             console.log(`Files to be downloaded`.green);
             engine.files.forEach((file) => {
-                if (path.extname(file.name) === '.mp3' || path.extname(file.name) == '.flac') {
+                if (path.extname(file.name) === '.mp3' || path.extname(file.name) == '.flac', path.extname(file.name) == '.aac', path.extname(file.name) == '.wma') {
                     console.log(file.name);
                     var stream = file.createReadStream();
                 }
