@@ -1,0 +1,19 @@
+{
+    "name": "get-me-that-album",
+    "version": "1.0.2",
+    "description": "Get me that album!",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+      "get-me-that-album": "bin/get-me-that-album"
+    },
+    "author": "Paul Xu <paulxuca@gmail.com> (https://github.com/paulxuca)",
+    "license": "ISC",
+    "dependencies": {
+        "colors": "^1.1.2",
+        "thepiratebay": "^0.2.6",
+        "torrent-stream": "^1.0.3"
+    }
+}

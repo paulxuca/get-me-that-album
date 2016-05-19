@@ -1,0 +1,18 @@
+#! /usr/bin/env node
+'use strict';
+
+const getMeThatAlbum = require('../src/index.js');
+
+getMeThatAlbum.getInfo()
+		.then(info=>{
+			return getMeThatAlbum.getTorrents(info)
+		})
+		.then(res =>{
+			return getMeThatAlbum.downloadTorrent(res);
+		})
+		.then(torrent =>{
+			console.log(torrent.green);
+		})
+		.catch(e =>{
+			console.log(String(e.message).red);
+		})
